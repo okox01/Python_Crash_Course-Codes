@@ -27,3 +27,12 @@ path = Path(r"C:\Users\LENOVO\OneDrive\Desktop\sami.txt")
 
 # Checking if the file exists at the specified path (returns True if it exists, False otherwise)
 print(path.exists())
+
+
+from pathlib import Path
+
+path=Path(r'C:\Users\LENOVO\OneDrive\Desktop\sami.txt')
+contents=path.read_text()
+contents=contents.rstrip()
+print(contents)
+
